@@ -1,5 +1,5 @@
 #!/system/bin/sh
-# cpapk: A command-line APK 'extraction' tool that copies a desired application to /sdcard.
+# cpapk: A command-line APK 'extraction' tool that copies a desired application to /sdcard for Android devices.
 # Author: Summer (https://github.com/alerithe)
 # Source: https://github.com/alerithe/cpapk
 
@@ -43,5 +43,5 @@ if [ $1 != "" ]; then
     fi
     echo "Attempt completed"
 else
-    echo "No input given"
+    echo "usage: cpapk app_name"
 fi
