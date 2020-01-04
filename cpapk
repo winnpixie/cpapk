@@ -3,17 +3,17 @@
 # Author: Summer (https://github.com/alerithe)
 # Source: https://github.com/alerithe/cpapk
 
-if [ $1 != "" ]; then
+if [[ $1 != "" ]]; then
     echo "Attempting to copy app '$1' to /sdcard/$1.apk"
 
     # Grab package
     package="$(pm list packages | grep -i $1 | awk -F ':' '{print $2}')"
-    if [ $package != "" ]; then
+    if [[ $package != "" ]]; then
         echo "Package found: $package"
 
         # Grab APK path
         apk_file="$(pm path $package | awk -F ':' '{print $2}')"
-        if [ $apk_file != "" ]; then
+        if [[ $apk_file != "" ]]; then
             echo "APK file found: $apk_file"
 
             # Copy APK file to /sdcard
@@ -29,7 +29,7 @@ if [ $1 != "" ]; then
 
         # Grab directory from /system/app
         apk_file="$(ls /system/app | grep -i $1)"
-        if [ $apk_file != "" ]; then
+        if [[ $apk_file != "" ]]; then
             echo "System APK file found: $apk_file.apk"
 
             # Copy APK file to /sdcard
