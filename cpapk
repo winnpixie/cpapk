@@ -7,7 +7,7 @@ if [ $1 != "" ]; then
     echo "Attempting to copy app '$1' to /sdcard/$1.apk"
 
     # Grab package
-    package="$(pm list packages | grep -i "$1" | awk -F ':' '{print $2}')"
+    package="$(pm list packages | grep -i $1 | awk -F ':' '{print $2}')"
     if [ $package != "" ]; then
         echo "Package found: $package"
 
