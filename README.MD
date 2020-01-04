@@ -10,7 +10,7 @@ A command-line APK 'extraction' tool that copies a desired application to /sdcar
 * Connect your device and start the adb server (``adb start-server``)
 * Accept the debug popup (if prompted)
 * Run ``adb push cpapk /sdcard``
-* Run ``adb shell sh /sdcard/cpapk (app_name)``
+* Run ``adb shell sh /sdcard/cpapk app_name`` (replace app_name with the desired application)
 
 ## Notes:
 * You may be required to run ``dos2unix`` on the ``cpapk`` executable (``adb shell dos2unix /sdcard/cpapk``)
