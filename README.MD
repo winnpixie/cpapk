@@ -23,4 +23,4 @@ A command-line APK 'extraction' tool that copies a desired application to /sdcar
 * You may be required to run ``dos2unix`` on the ``cpapk`` executable (``adb shell dos2unix /sdcard/cpapk`` or just ``dos2unix /sdcard/cpapk`` if you're on Termux).
     * I tried to force commits to use LF instead of CRLF but I'm not sure if it worked.
 * Running through Termux on a non-rooted device does not work for any non-System apps and will require an app from the Play Store.
-    * I can't confirm if this problem persists on a rooted device also because I don't own one.
+    * I can't confirm if this problem persists on a rooted device as I don't own one.

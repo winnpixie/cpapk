@@ -12,13 +12,13 @@ if [[ $1 != "" ]]; then
         echo "Package found: $package"
 
         # Grab APK path
-        apk_file="$(pm path $package | awk -F ':' '{print $2}')"
+        apk_file="$(pm path $package | awk -F ':' '{print $2}' | grep -i '==/base.apk')"
         if [[ $apk_file != "" ]]; then
             echo "APK file found: $apk_file"
 
             # Copy APK file to /sdcard
             echo "Copying $apk_file to /sdcard/$1.apk"
-            cp $apk_file /sdcard/$1.apk
+            cp $apk_file "/sdcard/$1.apk"
 
             echo "Copy successful"
         else
