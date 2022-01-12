@@ -16,7 +16,7 @@ A command-line APK 'extraction' tool that copies a desired application to /sdcar
 * Install [Termux](https://termux.com/) on your device
 * (This is a one-time step) Run `termux-setup-storage` to allow Termux file access
 * Run `cd /sdcard`
-* (This is a one-time step) Run `curl -O https://alerithe.github.io/cpapk/cpapk.sh` to download the executable
+* (This is a one-time step) Run `curl -O https://suhtiva.github.io/cpapk/cpapk.sh` to download the executable
 * Run `bash cpapk.sh app_name` (replace `app_name` with the desired application)
 
 ## Notes:
